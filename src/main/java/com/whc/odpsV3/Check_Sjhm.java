@@ -23,4 +23,9 @@ public class Check_Sjhm extends UDF {
         }
         return lxdh_format;
     }
+
+    public static void main(String[] args) {
+        Check_Sjhm check_sjhm = new Check_Sjhm();
+        //System.out.println(check_sjhm.evaluate("18358392048.13575613072"));
+    }
 }

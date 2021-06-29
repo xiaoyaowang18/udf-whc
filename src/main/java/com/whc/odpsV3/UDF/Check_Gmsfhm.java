@@ -24,7 +24,6 @@ public class Check_Gmsfhm extends UDF {
 
     public static void main(String[] args) {
         Check_Gmsfhm check_gmsfhm = new Check_Gmsfhm();
-        System.out.println(check_gmsfhm.evaluate("123456198711111234"));
-        System.out.println(Tool.getVerifycode("123456198711111234"));
+        System.out.println(check_gmsfhm.evaluate("120107197104063014"));
     }
 }

@@ -1,4 +1,4 @@
-package com.chinaoly.udtf.reduce;
+package com.whc.relation_udf.udtf.reduce;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -6,7 +6,6 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-
 import com.aliyun.odps.udf.UDFException;
 import com.aliyun.odps.udf.UDTF;
 
@@ -16,6 +15,7 @@ public class ReduceLgtzs extends UDTF{
 	public void process(Object[] arg0) throws UDFException, IOException {
 		// TODO Auto-generated method stub
 
+		//上网时间差、下网时间差
 		Long timeDifference = (Long) arg0[0];
 		String jsondata = (String) arg0[1];
 		String lgdm = (String) arg0[2];
@@ -25,11 +25,13 @@ public class ReduceLgtzs extends UDTF{
 		try {
 			String[] jsonArr = jsondata.split("##");
 			Set<String> set = new HashSet<String>();
+			//set存放每个人的上网记录去重
 			for (String json : jsonArr) {
 				if (json.length() > 0) {
 					set.add(json);
 				}
 			}
+			//存到list
 			Iterator<String> it = set.iterator();
 			List<String> list = new ArrayList<String>();
 			while (it.hasNext()) {

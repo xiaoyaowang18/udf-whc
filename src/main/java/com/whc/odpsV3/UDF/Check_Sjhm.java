@@ -1,4 +1,4 @@
-package com.whc.odpsV3;
+package com.whc.odpsV3.UDF;
 
 import com.aliyun.odps.udf.UDF;
 import com.whc.tools.Tool;

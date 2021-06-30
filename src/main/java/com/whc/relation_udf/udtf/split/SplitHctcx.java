@@ -1,4 +1,4 @@
-package com.chinaoly.udtf.split;
+package com.whc.relation_udf.udtf.split;
 
 import java.io.IOException;
 

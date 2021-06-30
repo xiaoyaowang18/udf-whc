@@ -1,4 +1,4 @@
-package com.chinaoly.udaf.aggMap;
+package com.whc.relation_udf.udaf.aggMap;
 
 import org.apache.commons.lang.StringUtils;
 

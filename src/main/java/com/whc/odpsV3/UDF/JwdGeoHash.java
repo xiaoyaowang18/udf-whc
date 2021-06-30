@@ -1,4 +1,4 @@
-package com.whc.odpsV3;
+package com.whc.odpsV3.UDF;
 
 import ch.hsr.geohash.GeoHash;
 import com.aliyun.odps.udf.UDF;

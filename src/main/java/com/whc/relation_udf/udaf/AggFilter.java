@@ -1,4 +1,4 @@
-package com.chinaoly.udaf;
+package com.whc.relation_udf.udaf;
 
 import java.io.DataInput;
 import java.io.DataOutput;

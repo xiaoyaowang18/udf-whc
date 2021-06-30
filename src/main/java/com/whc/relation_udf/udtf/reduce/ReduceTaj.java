@@ -1,4 +1,4 @@
-package com.chinaoly.udtf.reduce;
+package com.whc.relation_udf.udtf.reduce;
 
 
 import java.util.ArrayList;

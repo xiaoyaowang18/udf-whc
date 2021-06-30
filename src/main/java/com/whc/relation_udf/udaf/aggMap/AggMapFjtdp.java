@@ -1,4 +1,4 @@
-package com.chinaoly.udaf.aggMap;
+package com.whc.relation_udf.udaf.aggMap;
 
 import java.io.DataInput;
 import java.io.DataOutput;

@@ -1,4 +1,4 @@
-package com.chinaoly.udtf.reduce;
+package com.whc.relation_udf.udtf.reduce;
 
 import java.security.MessageDigest;
 import java.text.SimpleDateFormat;
@@ -34,7 +34,8 @@ public class Tool {
 		}
 		return result;
 	}
-	
+
+	//比较两个人的登记时间，与到期时间，如果差异小于传入的参数seconds，则返回true，证明是同时间段的。
 	public static boolean checkTzsTime(String djrq1, String dqrq1, String djrq2, String dqrq2, String pattern, long seconds) {
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		Date startDate1 = null;
@@ -44,7 +45,6 @@ public class Tool {
 		boolean result = false;
 		long milliseconds = seconds * 1000;
 		try {
-
 			startDate1 = sdf.parse(djrq1);
 			startDate2 = sdf.parse(djrq2);
 			endDate1 = sdf.parse(dqrq1);

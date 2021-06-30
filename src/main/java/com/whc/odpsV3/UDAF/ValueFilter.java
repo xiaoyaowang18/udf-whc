@@ -1,4 +1,4 @@
-package com.whc.udaf;
+package com.whc.odpsV3.UDAF;
 
 import java.io.DataInput;
 import java.io.DataOutput;

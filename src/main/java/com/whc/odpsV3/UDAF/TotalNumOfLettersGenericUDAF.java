@@ -1,4 +1,4 @@
-package com.whc.udaf;
+package com.whc.odpsV3.UDAF;
 import org.apache.hadoop.hive.ql.exec.Description;
 import org.apache.hadoop.hive.ql.exec.UDFArgumentLengthException;
 import org.apache.hadoop.hive.ql.exec.UDFArgumentTypeException;

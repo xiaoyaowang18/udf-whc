@@ -1,4 +1,4 @@
-package com.chinaoly.udtf.sort;
+package com.whc.relation_udf.udtf.sort;
 
 import java.io.IOException;
 
